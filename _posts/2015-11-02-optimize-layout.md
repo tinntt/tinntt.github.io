@@ -29,7 +29,8 @@ title: View Hierarchy, Optimize Layout và Custom View (Phần 1)!
 <p align="justify">+ Width và Height: cặp giá trị còn lại thể hiện độ dài và độ rộng thật sự của View trên màn hình sau khi được vẽ lên. Cặp giá trị này có thể khác giá trị với cặp measured width và measured height. Có thể lấy cặp giá trị này qua hàm getWidth() và getHeight().</p>
 <h2>View Hierarchy - cây giao diện?</h2>
 <p align="justify">Android sẽ tổ chức giao diện màn hình dưới dạng cây. Thường thì các layout sẽ là các nốt cha và các widget sẽ là các nốt con. Vả thông thường các lá sẽ là phần được thể hiện lên giao diện người dùng. Với cách tổ chức như vậy thì việc giao diện có cây quá sâu thì lúc duyệt sẽ rất tốn thời gian.</p>
-(Bổ sung hình)
+
+![alt tag](https://raw.githubusercontent.com/tinntt/tinntt.github.io/master/images/view-tree.png)
 
 <h2>Làm sao để view có thể được vẽ lên màn hình?</h2>
 <p align="justify">Để vẽ được 1 view lên màn hình thì android sẽ thực hiện 2 bước layout và draw. Đầu tiên View phải biết được vị trí và kích thước thật sự của nó trên màn hình để được vẽ, đây gọi là bước layout. Sau đó view sẽ được vẽ lên màn hình của thiết bị - bước draw.</p>
