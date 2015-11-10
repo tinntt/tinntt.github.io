@@ -15,8 +15,7 @@ title: View Hierarchy, Optimize Layout và Custom View (Phần 2)!
 
 <p align="justify">Đang viết...</p>
 
-{{ "{% if page.comments " }}%} 
-<hr/>
+
+
 <h2>Comments</h2>
-<div class="fb-comments" data-href="{{ "{{ site.url " }}}}{{ "{{ page.url " }}}}" data-num-posts="4" data-width="706"></div>
-{{ "{% endif"}}%}
+<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comment?post=20151103" data-numposts="5"></div>
