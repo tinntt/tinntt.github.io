@@ -21,6 +21,23 @@
   </head>
 
   <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '703771669759287',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -42,7 +59,11 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-
+{{ "{% if page.comments " }}%} 
+<hr/>
+<h2>Comments</h2>
+<div class="fb-comments" data-href="{{ "{{ site.url " }}}}{{ "{{ page.url " }}}}" data-num-posts="4" data-width="706"></div>
+{{ "{% endif"}}%}
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
