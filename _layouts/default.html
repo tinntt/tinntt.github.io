@@ -59,11 +59,12 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-{{ "{% if page.comments " }}%} 
-<hr/>
-<h2>Comments</h2>
-<div class="fb-comments" data-href="{{ "{{ site.url " }}}}{{ "{{ page.url " }}}}" data-num-posts="4" data-width="706"></div>
-{{ "{% endif"}}%}
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
