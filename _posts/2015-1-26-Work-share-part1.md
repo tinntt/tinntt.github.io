@@ -21,3 +21,9 @@ title: Chia sẻ kinh nghiệm khi chuẩn bị ra trường, xin việc và ph�
 <p align="justify"><strong><u>Hướng phát triển (hướng nghiên cứu):</u></strong> Cái này cũng nên tùy thuộc vào công ty và công việc bạn làm mà ghi vào nhé. Ví dụ như muốn vào Zalo của VNG làm thì các bạn có thể ghi hướng nghiên cứu mà bạn thích là VOIP, real-time system, mobile application optimization. Còn vào công ty nào làm web thì hứng thú bên web sercurity chẳng hạn, phần này tùy cách bạn chém gió nhé.</br></p>
 <p align="justify"><strong><u>Reference:</u></strong> Cuối cùng là phần các bạn có cũng được mà không có cũng không sao. Nhưng có vẫn tốt hơn, bạn nên xin phép và ghi tên 1 số anh chị mà hướng dẫn bạn, hoặc từng làm việc với bạn ở công ty trước vào. Có thể là team leader của bạn lúc trước. Hoặc thầy hướng dẫn luận văn gì đấy. Có thể là độ nổi tiếng của họ sẽ giúp bạn 1 vé được đi phỏng vấn đấy. Ví dụ như team leader của bạn cũng từng làm team leader bên cty này. Và làm rất tốt nên họ sẽ đánh giá cao những người đã được người đó lead.</br></p>
 Phần sau mình sẽ chia sẻ về việc đi phỏng vấn “lần đầu” cho các bạn chưa đi pv lần nào hoặc chuẩn bị sẽ đi.
+
+{{ "{% if page.comments " }}%} 
+<hr/>
+<h2>Comments</h2>
+<div class="fb-comments" data-href="{{ "{{ site.url " }}}}{{ "{{ page.url " }}}}" data-num-posts="4" data-width="706"></div>
+{{ "{% endif"}}%}
