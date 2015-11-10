@@ -31,3 +31,12 @@ title: Lập trình di động và những điều cần chú ý!
 <p align="justify">Bạn sẽ cảm thấy khó chịu, bức bối cực kì khi bạn làm được điều này. Vì đi đâu trong app bạn bạn cũng sẽ thấy chưa hài lòng, và muốn nó tốt hơn, nhanh hơn và "rẻ" hơn. Hoặc nếu bạn không làm được thì bạn cứ nghĩ, sau này công ty "kế tiếp" của bạn sẽ nhìn vào sản phẩm bạn đang làm và đánh giá. Họ sẽ có cái nhìn cực kì khách quan, vì thế nếu bạn không biết tự đặt lại vị trí của mình thì tương lai bạn cũng có thể gặp khó khăn.</p>
 
 <p align="justify">Bài viết là 1 số kinh nghiệm ít ỏi mình rút ra được, mọi người có góp ý hay đóng góp thêm thì mail về cho mình nha. Email: ntttin132@Gmail.com!</p>
+
+<h2>Comments</h2>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comment?post=20151026" data-numposts="5"></div>

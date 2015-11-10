@@ -18,4 +18,10 @@ title: View Hierarchy, Optimize Layout và Custom View (Phần 2)!
 
 
 <h2>Comments</h2>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comment?post=20151103" data-numposts="5"></div>

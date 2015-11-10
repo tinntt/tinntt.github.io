@@ -44,3 +44,12 @@ title: View Hierarchy, Optimize Layout và Custom View (Phần 1)!
 <p align="justify">Để gọi lại 1 view vẽ lại chính nó thì có thể gọi hàm invalidate().</p>
 
 <p align="justify">Tạm kết thúc phần 1 về View và cách 1 view được vẽ lên màn hình. Bài tiếp theo mình sẽ đi đến optimize layout.</p>
+
+<h2>Comments</h2>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comment?post=20151102" data-numposts="5"></div>
