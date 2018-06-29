@@ -17,31 +17,8 @@ Ok, tới đây bạn hãy nghĩ trong đầu 1 con số mà bạn cho là thỏ
 
 <h2>Cách 1:</h2>
 
-<p align="justify">
-	đặt n = 365, (số ngày trong năm).</br>
-		k là số học sinh cần phải có.</br>
-		b<sub>i</sub> là ngày sinh của học sinh i.</br>
-		Với từng cặp học sinh (i,j) ta đặt 1 biến X<sub>ij</sub> với 1 &le; i < j &le; k: </br>
-		X<sub>ij</sub> = I{xác suất để học sinh i và j trùng ngày sinh} = 1 (nếu trùng) = 0 (nếu không trùng).</br>
-	Đầu tiên, xác suất để 1 học sinh rơi vào 1 ngày a nào đó là 1/n.</br>
-	Pr{b<sub>i</sub> = a} = 1/n.</br>
-	=> Pr{b<sub>i</sub> = a và b<sub>j</sub> = a}</br> = Pr{b<sub>i</sub> = a}Pr{b<sub>j</sub> = a}</br> = 1/n<sup>2</sup> (2 xác suất độc lập).</br>
-
-	1 năm có n ngày, vậy xác suất để 2 học sinh trùng ngày sinh vào 1 ngày bất kì là:</br>
-	&sum;<sub>a=1</sub><sup>n</sup> (1/n<sup>2</sup>) = n(1/n<sup>2</sup>) = 1/n.</br>
-
-	Vậy sự kiện để 2 học sinh có cùng ngày sinh là E[X<sub>ij</sub>] = Pr{2 học sinh có cùng ngày sinh} = 1/n.</br>
-
-	Đặt X là tổng số các cặp học sinh có cùng ngày sinh với nhau:</br>
-
-	X = &sum;<sub>i=1</sub><sup>k</sup>&sum;<sub>j=i+1</sub><sup>k</sup>X<sub>ij</sub>.</br>
-
-	vậy ta có E[X] = E[&sum;<sub>i=1</sub><sup>k</sup>&sum;<sub>j=i+1</sub><sup>k</sup>X<sub>ij</sub>]</br>
-				   = &sum;<sub>i=1</sub><sup>k</sup>&sum;<sub>j=i+1</sub><sup>k</sup>E[X<sub>ij</sub>]</br>
-				   = C(k,2)1/n ( C(k,2) = chọn 2 trong k học sinh).</br>
-				   = k(k-1)/2n.
-
-	Vậy để có ít nhất 1 cặp học sinh trùng ngày sinh thì k(k-1) &ge; 2n => k = 28. Có vẻ hơi nhỏ, nhưng thử với cách 2 và so sánh xem mình chứng mình đúng hay sai.
+<p align="justify">Đặt n = 365, (số ngày trong năm).</br>k là số học sinh cần phải có.</br>b<sub>i</sub> là ngày sinh của học sinh i.</br>Với từng cặp học sinh (i,j) ta đặt 1 biến X<sub>ij</sub> với 1 &le; i < j &le; k: </br>X<sub>ij</sub> = I{xác suất để học sinh i và j trùng ngày sinh} = 1 (nếu trùng) = 0 (nếu không trùng).</br>Đầu tiên, xác suất để 1 học sinh rơi vào 1 ngày a nào đó là 1/n.</br>Pr{b<sub>i</sub> = a} = 1/n.</br>=> Pr{b<sub>i</sub> = a và b<sub>j</sub> = a}</br> = Pr{b<sub>i</sub> = a}Pr{b<sub>j</sub> = a}</br> = 1/n<sup>2</sup> (2 xác suất độc lập).</br>1 năm có n ngày, vậy xác suất để 2 học sinh trùng ngày sinh vào 1 ngày bất kì là:</br>&sum;<sub>a=1</sub><sup>n</sup> (1/n<sup>2</sup>) = n(1/n<sup>2</sup>) = 1/n.</br>Vậy sự kiện để 2 học sinh có cùng ngày sinh là E[X<sub>ij</sub>] = Pr{2 học sinh có cùng ngày sinh} = 1/n.</br>Đặt X là tổng số các cặp học sinh có cùng ngày sinh với nhau:</br>X = &sum;<sub>i=1</sub><sup>k</sup>&sum;<sub>j=i+1</sub><sup>k</sup>X<sub>ij</sub>.</br>vậy ta có E[X] = E[&sum;<sub>i=1</sub><sup>k</sup>&sum;<sub>j=i+1</sub><sup>k</sup>X<sub>ij</sub>]</br>= &sum;<sub>i=1</sub><sup>k</sup>&sum;<sub>j=i+1</sub><sup>k</sup>E[X<sub>ij</sub>]</br>= C(k,2)1/n ( C(k,2) = chọn 2 trong k học sinh).</br>
+				   = k(k-1)/2n.</br>Vậy để có ít nhất 1 cặp học sinh trùng ngày sinh thì k(k-1) &ge; 2n => k = 28. Có vẻ hơi nhỏ, nhưng thử với cách 2 và so sánh xem mình chứng mình đúng hay sai.
 </p>
 
 <h2>Cách 2 (from wiki):</h2>
