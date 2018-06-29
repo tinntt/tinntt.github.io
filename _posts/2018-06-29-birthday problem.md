@@ -23,7 +23,6 @@ Ok, tới đây bạn hãy nghĩ trong đầu 1 con số mà bạn cho là thỏ
 		b<sub>i</sub> là ngày sinh của học sinh i.</br>
 		Với từng cặp học sinh (i,j) ta đặt 1 biến X<sub>ij</sub> với 1 &le; i < j &le; k: </br>
 		X<sub>ij</sub> = I{xác suất để học sinh i và j trùng ngày sinh} = 1 (nếu trùng) = 0 (nếu không trùng).</br>
-
 	Đầu tiên, xác suất để 1 học sinh rơi vào 1 ngày a nào đó là 1/n.</br>
 	Pr{b<sub>i</sub> = a} = 1/n.</br>
 	=> Pr{b<sub>i</sub> = a và b<sub>j</sub> = a}</br> = Pr{b<sub>i</sub> = a}Pr{b<sub>j</sub> = a}</br> = 1/n<sup>2</sup> (2 xác suất độc lập).</br>
@@ -48,24 +47,20 @@ Ok, tới đây bạn hãy nghĩ trong đầu 1 con số mà bạn cho là thỏ
 <h2>Cách 2 (from wiki):</h2>
 
 <p align="justify">
-	Kết quả ở cách 1 ta có là 28 học sinh. Với cách này mình sẽ chứng minh ngược lại, bằng cách tìm xác suất để số k học sinh có khác ngày sinh với nhau. Bắt đầu từ học sinh 1, số cách chọn ngày sinh sẽ là 365/365, vậy học sinh 2 chỉ còn 364/365 cách chọn ngày sinh. cứ thế học sinh thứ i sẽ có (365 - i + 1)/365 cách chọn.
-
-	Mình sẽ lấy số học sinh ở cách 1 và tìm xem xác suất để 28 học sinh này khác ngày sinh với nhau là bao nhiêu:
-
-	gọi P(A') là xác suất 28 học sinh khác ngày sinh.
-	P(A') = 365/365 * 364/365 * 363/365 * ..... * 338/365
-		  = (1/365)<sup>28</sup> * (365 * 364 * 363 * .... * 338)
-		  ~ 0.3655385.
-	Vậy P(A) (xác suất 28 học sinh có ít nhất 1 cặp trùng ngày sinh) = 1 - 0.3655385 = 0.6344 = 63,44%.
-
-	Vậy chỉ với 28 học sinh, thì xác suất để có 1 cặp trùng ngày sinh là trên > 50%.
-
+	Kết quả ở cách 1 ta có là 28 học sinh. Với cách này mình sẽ chứng minh ngược lại, bằng cách tìm xác suất để số k học sinh có khác ngày sinh với nhau. Bắt đầu từ học sinh 1, số cách chọn ngày sinh sẽ là 365/365, vậy học sinh 2 chỉ còn 364/365 cách chọn ngày sinh. cứ thế học sinh thứ i sẽ có (365 - i + 1)/365 cách chọn.</br>
+	Mình sẽ lấy số học sinh ở cách 1 và tìm xem xác suất để 28 học sinh này khác ngày sinh với nhau là bao nhiêu:</br>
+	gọi P(A') là xác suất 28 học sinh khác ngày sinh.</br>
+	P(A') = 365/365 * 364/365 * 363/365 * ..... * 338/365</br>
+		  = (1/365)<sup>28</sup> * (365 * 364 * 363 * .... * 338)</br>
+		  ~ 0.3655385.</br>
+	Vậy P(A) (xác suất 28 học sinh có ít nhất 1 cặp trùng ngày sinh) = 1 - 0.3655385 = 0.6344 = 63,44%.</br>
+	Vậy chỉ với 28 học sinh, thì xác suất để có 1 cặp trùng ngày sinh là trên > 50%.</br>
 	Tính tương tự vậy đến 50 học sinh, ta sẽ có xác suất là 97%. 1 xác suất gần như chắc chăn sẽ có học sinh trùng ngày sinh trong 1 lớp có 50 người. 
 </p>
 
-<p align="justify">Bây giờ bạn đem con số đã chứng mình so sánh với số lúc đầu bạn nghĩ xem chênh lệch như thế nào. Sẽ không ít người nghĩ là cần ít nhất 366 học sinh để thỏa đề bài toán. Vậy cách kiếm tiền đây là gì?
-Nếu nhà có em nhỏ chưa đi học đại học (tức là chưa học qua môn xác chết thống kê). Thì anh em cứ mạnh dạn mà đưa ra kèo "tao chỉ cần 50 người cùng năm sinh để có thể có 1 cặp cùng ngày sinh, nếu không có cặp nào thì mày thắng, còn lại thì tao ăn nữa tiền thôi. Chọn ngẫu nhiên theo lớp học hay gì đấy cũng được.". Đương nhiên những đứa nghĩ cần 366 người thì sẽ nhận lời liền, vì 50 chỉ bằng 1/7 con số 366, dại gì mà không chơi. 
-Chúc anh em mau giàu, còn nếu không giàu thì do bạn xui vl, vì 3% cũng rơi vào được thì thua cũng đáng rồi.
+<p align="justify">Bây giờ bạn đem con số đã chứng mình so sánh với số lúc đầu bạn nghĩ xem chênh lệch như thế nào. Sẽ không ít người nghĩ là cần ít nhất 366 học sinh để thỏa đề bài toán. Vậy cách kiếm tiền đây là gì?</br>
+Nếu nhà có em nhỏ chưa đi học đại học (tức là chưa học qua môn xác chết thống kê). Thì anh em cứ mạnh dạn mà đưa ra kèo "tao chỉ cần 50 người cùng năm sinh để có thể có 1 cặp cùng ngày sinh, nếu không có cặp nào thì mày thắng, còn lại thì tao ăn nữa tiền thôi. Chọn ngẫu nhiên theo lớp học hay gì đấy cũng được.". Đương nhiên những đứa nghĩ cần 366 người thì sẽ nhận lời liền, vì 50 chỉ bằng 1/7 con số 366, dại gì mà không chơi. </br>
+Chúc anh em mau giàu, còn nếu không giàu thì do bạn xui, vì 3% cũng rơi vào được thì tốt nhất đừng chơi gì hết, để tiền uống trà sửa cho bổ.
 </p>
 
 <h2>Comments</h2>
