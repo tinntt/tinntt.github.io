@@ -1,0 +1,42 @@
+---
+layout: post
+title: Lập trình di động và những điều cần chú ý!
+---
+
+<p align="justify">(Lời mở đầu, thích thì đọc không thích thì cho qua) Vậy là cũng ngót nghét 4 tháng từ lúc bỏ vị trí làm native của Android chuyển sang làm giao diện và tính năng người dùng. Trong 4 tháng đó thì hết 3 tháng giành ra để chạy tính năng, chỉ mới 1 tháng gần đây mới giành lại thời gian để nghiên cứu "lại" kiến thức Android. Sau khi kinh qua từ core, tầng native tới tầng UI của Android thì hầu như đã có cái nhìn tổng quan về lập trình Android nói riêng và lập trình di động nói chung. Vì vậy, mình dự định viết vài bài blog để tổng hợp kinh nghiệm, kiến thức và các bài học mình rút ra được trong qua trình làm việc. Xem như vừa ôn bài vừa chia sẽ kiến thức, còn viết được vài bài hay không thì còn tùy vào mức độ "siêng" level max của mình nữa :v.</p>
+<p align="justify">Thì sau 4 tháng chuyển từ native sang làm UI mình chỉ muốn rút gọn bài viết này trong 1 câu duy nhất là "PLEASE! LET THE UI COME FIRST", còn câu chuyện tại sao mình nói câu đó và làm thế nào để let it come first thì mình sẽ viết tiếp theo sau đây hoặc trong các bài kế tiếp</p>
+<h3>Sự khác biệt giữa mobile và computer (pc và laptop) - mình chỉ so sánh với Android vì nó khá phổ biến trên thế giới và đa dạng về cấu hình hơn.</h3>
+<p align="justify">- TỐC ĐỘ XỬ LÝ: Về tốc độ xử lý thì ai dùng qua computer và mobile đều sẽ dễ dàng khẳng định được là tốc độ của mobile mặc dù đã rất phát triển nhưng so với tốc độ xử lý của máy tính thì vẫn còn xa. Nhưng để nói có sách mách có chứng thì sau một hồi tìm hiểu các thông số CPU của một số máy mạnh nhất hiện nay thì:</p>
+<p align="justify">+ Android: Đa số máy thuộc dạng trâu bò hiện này thì CPU đã đạt được ngưỡng 2.7GHz và lõi tứ http://news.zing.vn/10-de-Android-cau-hinh-manh-nhat-hien-nay-post482280.html . </p>
+<p align="justify">+ Computer: Về phần máy tính thì sau khi tìm hiểu 1 số bài viết thì mình biết được CPU của máy laptop hiện nay đã có thế lên đến 3,4GHz và lõi 8 lõi 12 chứ không còn là lõi tứ nữa. Bên cạnh đó máy máy tính còn có thể được trang bị card màn hình cấu hình "khủng" để giúp cho việc xử lý đồ họa được mượt mà hơn.</p>
+<p align="justify">- BỘ NHỚ RAM: RAM là 1 phần không thể thiếu nếu đem ra so sánh performance giữa 2 thiết bị nào đó.</p>
+<p align="justify">+ Android: Mình vẫn chưa được thấy máy Android nào trang bị RAM lên đến 8GB, hoặc nếu có thì cũng thuộc dạng hàng hiếm hiện nay, đa số các máy Android tầm trung chỉ vào khoảng 2-3GB RAM là cùng, trong đó hệ điều hành thường chiếm tới vài trăm MB RAM. </p>
+<p align="justify">+ Computer: Laptop hoặc PC hiện nay theo mình biết thì đã trang bị được tối đa lên đên 16GB và có vài máy đã được 32GB RAM, 1 số lượng bộ nhớ tuyệt vời để chạy được hàng tá ứng dụng.</p>
+<p align="justify">- DUNG LƯỢNG LƯU TRỮ: Với nhu cầu kĩ thuật số ngày càng phát triển về lượng và cả về chất như hiện nay thì 1 tấm hình có dung lượng vài chục MB hoặc 1 2 game có dung lượng lên tới vài GB là chuyện hết sức bình thường.</p>
+<p align="justify">+ Android: Với các máy hiện nay thì đa số chỉ hộ trợ bộ nhớ trong khoảng 64GB và nếu có hổ trợ thẻ nhớ ngoài nữa thì mình nghĩ cũng chỉ lên đến tầm 128GB nữa là cùng. </p>
+<p align="justify">+ Computer: Laptop hiện nay thì ổ cứng 256GB là đã thuộc dạng vứt đi được rồi. Một số máy hiện nay đã trang bị ổ cứng 1TB, ngoài ra còn chưa kể đến việc có thể lắp song song ổ SSD vào để tăng tốc độ truy xuất của bộ nhớ.</p>
+<p align="justify">- PIN: Đa số người dùng computer sẽ ít lo về vấn đề PIN trong khi đó việc dùng mobile sẽ bi ảnh hưởng rất nhiều đến dung lượng PIN của thiết bị.</p>
+<p align="justify">- TỐC ĐỘ MẠNG: Với thời đại internet như hiện nay thì tốc độ mạng là vấn đề không thể không đề cập tới.</p>
+<p align="justify">+ Android: Đa số người dùng di động sẽ sử dụng mạng di động 3G làm phương tiện truy cập internet chính vì vậy về chi phí sẽ tốn rất nhiều và tốc độ thì không thể so sánh với mạng cap quang được. </p>
+<p align="justify">+ Computer: Người dùng computer đa số sẽ sử dụng wifi hoặc mạng cáp, vì vậy việc dùng thả ga mạng để download và sẽ không lo đến chi phí sẽ là điều hiển nhiên</p>
+<p align="justify">Đương nhiên sẽ có rất nhiều khía cạnh còn phải so sánh, nhưng việc so sánh trên chủ yếu mình muốn nói là mobile còn rất hạn chế so với computer nên việc để làm được 1 ứng dụng tốt thì còn phải quan tâm trên mức "làm được" đối với 1 số vấn đề. Và như mình nói ở trên là "LET THE UI COME FIRST!"</p>
+<h3>Giao diện người dùng.</h3>
+<p align="justify">Hãy tưởng tượng việc bạn bật 1 ứng dụng xem hình gái xinh lên. Có 1 danh sách các hot girl được show ra, và khi bạn scroll xuống list hình giật tung chảo thì bạn có còn hứng thú với việc sử dụng app đó nữa hay không? hay là tìm 1 ứng dụng khác?? Hoặc vào 1 ứng dụng tìm quán ăn mà bạn phải đợi màn hình loading (thậm chí là không hiện gì) đến cả buổi thì bạn có nản và tắt nó đi trước khi dùng hay không? Việc người dùng tương tác với ứng dụng họ sẽ thấy giao diện và tương tác với nó đầu tiên, không cần biết tính năng bạn làm bá tới đâu, bao nhiêu công sức bạn bỏ ra để "make up" cho giao diện đẹp lung linh, nhưng khi người dùng tương tác vào cảm thấy không hài lòng thì việc ứng dụng bạn bị uninstall ngay sau đó là rất dễ xảy ra. Vì vậy giữa việc bạn làm được và làm tốt sẽ rất khác nhau.</p>
+<p align="justify">Nói thì dễ làm mới khó, mình có nghiên cứu khá nhiều tài liệu và tự tìm hiểu cũng như hỏi han các "thánh" khác thì rút ra 1 số kinh nghiệm về việc optimize layout (nhưng chưa có cơ hội áp dụng hết), mình sẽ chia sẽ ở những bài sau nếu có cơ hội. Một số kỹ thuật cho các bạn muốn tìm hiểu là: lazy load, optimize view hierachy, thread, cache, reuse view by using view holder,...</p>
+<h3>Đừng làm tốn tài nguyên người dùng 1 cách không đáng.</h3>
+<p align="justify">Như đã nói ở phần so sánh trước, Người dùng mobile đa phần sẽ dùng 3G để làm phương tiện truy cập internet. Vì vậy, dung lượng 3G là 1 điều hết sức đáng lưu ý. Đem so sánh 1 số ứng dụng OTT hiện nay như Zalo, Skype, Viber,.. thì bạn sẽ thích dùng cái nào hơn, đương nhiên là ứng dụng nào có dung lượng cuộc gọi thấp nhất và chất lượng ok nhất. Nói ngắn gọn lại là tốn ít tiền 3G nhưng gọi vẫn ok. Hoặc việc bạn phải tải đi tải lại 1 bài nhặc hoặc hình ảnh nào đó mà bạn "ĐÃ" tải trước đó rồi thì thật sự rất phí dung lượng 3G khi bạn sử dụng những app đó. Vì vậy việc chú ý tài nguyên từ bộ nhớ máy, RAM, dung lượng 3G,... rất đáng để chú ý khi bạn bắt đầu lập trình 1 ứng dụng di động.</p>
+<h3>Không nên làm người dùng khó hiểu và cảm thấy phức tạp khi dùng app.</h3>
+<p align="justify">Việc người dùng có sử dụng ứng dụng của bạn hay không còn tùy thuộc rất nhiều vào độ "đơn giản" của app bạn. Khi có 2 ứng dụng 1 ứng dụng bắt bạn phải điền đầy đủ thông tin và 1 ứng dụng chỉ cần click vào nút đăng nhập bằng facebook thì bạn sẽ chọn sử dụng ứng dụng nào? Đương nhiên là ứng dụng cho đăng nhập bằng facebook, vì nó khá đơn giản và dễ sử dụng. Ngoài ra những thao tác cơ bản nhưng số bước thực hiện quá nhiều cũng rất dễ làm cho user phát nản. Giả dụ khi bạn cần mua 1 món hàng online qua app. Thì bạn có muốn phải làm 3 4 bước thủ tục, qua 3 4 bước màn hình. Hay là chỉ cần click mua 1 phát là có hàng liền? Đơn cử cho việc này là sự xuất hiện của Dialog, giúp người dùng không phải chuyển màn hình nhiều và làm cho app có cảm giác là nhỏ và tiện dụng hơn.</p>
+<h3>Nên đặt ví trí của mình là một người dùng app</h3>
+<p align="justify">Bạn sẽ cảm thấy khó chịu, bức bối cực kì khi bạn làm được điều này. Vì đi đâu trong app bạn bạn cũng sẽ thấy chưa hài lòng, và muốn nó tốt hơn, nhanh hơn và "rẻ" hơn. Hoặc nếu bạn không làm được thì bạn cứ nghĩ, sau này công ty "kế tiếp" của bạn sẽ nhìn vào sản phẩm bạn đang làm và đánh giá. Họ sẽ có cái nhìn cực kì khách quan, vì thế nếu bạn không biết tự đặt lại vị trí của mình thì tương lai bạn cũng có thể gặp khó khăn.</p>
+
+<p align="justify">Bài viết là 1 số kinh nghiệm ít ỏi mình rút ra được, mọi người có góp ý hay đóng góp thêm thì mail về cho mình nha. Email: ntttin132@Gmail.com!</p>
+
+<h2>Comments</h2>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comment?post=20151026" data-numposts="5"></div>
