@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Humourless software engineer.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself. 
+A passionate Android Developer in various domains such as
+e-commerce, multimedia, OTT, finance, and AI.
+
+I'm now working in VinAI as an Android Lead. Constantly improving the
+quality of products is my work way.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ntttin132@gmail.com](mailto:ntttin132@gmail.com)
