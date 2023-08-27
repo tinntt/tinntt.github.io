@@ -189,3 +189,12 @@ title: Cách máy tính vận hành (Phần 1)
 
 <p align="justify">Hầu hết tất cả các file đều có cùng 1 định dạng là header và data. Header sẽ là phần chứa mô tả của file đó, tương ứng với đuôi file, còn data là dãy các chữ số biểu diễn thông tin của file đó. Vậy cái gì sẽ sử dụng phần header đó? Mình sẽ đi tiếp phần này ở mục 5.</p>
 <h1>5/ Biểu diễn lên màn hình.</h1>
+
+<h2>Comments</h2>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comment?post=20150126" data-numposts="5"></div>
