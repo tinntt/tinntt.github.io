@@ -141,7 +141,9 @@ title: Series Làm Bạn Gái Yêu Máy Tính (Phần 1)
 
 <p align="justify">Chúng ta đã biết được cách máy tính biểu diễn kí tự, ảnh và âm thanh như thế nào, vậy còn video thì sao? Video thực chất được kết hợp từ âm thanh và hình ảnh lại với nhau, cụ thể như thế nào chúng ta sẽ tìm hiểu thêm bên dưới.</p>
 
-[animation.webm](https://github.com/tinntt/tinntt.github.io/assets/7919498/64debc6c-0299-4c08-be0d-9b36e74a2848)
+<video controls width="250">
+  <source src="../images/20230826/animation.webm" type="video/webm" />
+</video>
 
 <p align="justify">Chắc hẳn các bạn đã quá quen với trò chơi bên trên. Dùng 1 tập ảnh và lật nó liên tục để tạo ra cảm giác như đang xem 1 video. Máy tính cũng sẽ dùng cách này để có thể tạo ra 1 file video từ các hình ảnh có sẵn. Video sẽ gồm các file ảnh chuyển động liên tục với nhau với 1 tần số đủ cao để mắt thường không nhận biết được đó là các tấm ảnh riêng lẻ. Đại lượng để biểu diễn sự liên tục này là frame per second (fps). Nếu fps càng cao thì video sẽ càng mượt mà, ngược lại càng thấp thì video sẽ có cảm giác giật lag.</p>
 
