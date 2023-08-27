@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series Làm Bạn Gái Yêu Máy Tính (Phần 1)
+title: Series Làm Bạn Gái Yêu Máy Tính - Cách máy tính hoạt động(Phần 1)
 ---
 
 <p align="justify">Tầm 20 năm trước, mình có được cơ hội sử dụng 1 chiếc máy tính bàn. Nó hầu như có thể thay thế hết tất các loại thiết bị khác ở thời điểm đó, từ máy chơi game, máy nghe nhạc, đầu băng đĩa và máy đánh văn bản. 20 năm sau, với sự phát triển của công nghệ, chúng ta có thể làm nhiều hơn thế từ giải trí tới công việc, truy cập mọi thông tin khắp nơi trên thế giới với những thiết bị còn nhỏ gọn hơn chiếc máy tính bàn ngày xưa rất nhiều. </p>
