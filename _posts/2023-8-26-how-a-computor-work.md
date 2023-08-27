@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Cách máy tính vận hành (Phần 1)
+title: Series Làm Bạn Gái Yêu Máy Tính (Phần 1)
 ---
 
 <p align="justify">Tầm 20 năm trước, mình có được cơ hội sử dụng 1 chiếc máy tính bàn. Nó hầu như có thể thay thế hết tất các loại thiết bị khác ở thời điểm đó, từ máy chơi game, máy nghe nhạc, đầu băng đĩa và máy đánh văn bản. 20 năm sau, với sự phát triển của công nghệ, chúng ta có thể làm nhiều hơn thế từ giải trí tới công việc, truy cập mọi thông tin khắp nơi trên thế giới với những thiết bị còn nhỏ gọn hơn chiếc máy tính bàn ngày xưa rất nhiều. </p>
 
-<p align="justify">Vậy bạn có bao giờ thắc mắc tại sao 1 thiết bị nhỏ như vậy lại có thể làm được rất nhiều việc như thế? bên trong nó hoạt đông như thế nào? làm sao thông tin có thể truyền đi khắp nơi hoặc nằm gọn trong chiếc điện thoại của bạn?</p>
+<p align="justify">Vậy bạn có bao giờ thắc mắc tại sao 1 thiết bị nhỏ như vậy lại có thể làm được rất nhiều việc như thế? Bên trong nó hoạt đông như thế nào? Làm sao thông tin có thể truyền đi khắp nơi hoặc nằm gọn trong chiếc điện thoại của bạn?</p>
 
-<p align="justify">Mình sẽ viết 1 vài bài viết ở góc nhìn non-tech để bạn có thể hiểu được cách 1 chiếc máy tính vận hành, về cách thông tin được lưu trữ. Và nếu có thời gian mình sẽ viết thêm 1 số bài về internet, mã hóa,.... (đương nhiên là không sau vào kỹ thuật) để có thể giúp các bạn không làm việc trong ngành này có thể hiểu và thấy được cái hay của ngành khoa học máy tính.</p>
+<p align="justify">Mình sẽ viết 1 vài bài viết ở góc nhìn non-tech để bạn có thể hiểu được cách 1 chiếc máy tính vận hành, về cách thông tin được lưu trữ. Và nếu có thời gian mình sẽ viết thêm 1 số bài về internet, mã hóa,.... (đương nhiên là không sâu vào kỹ thuật) để có thể giúp các bạn không làm việc trong ngành này có thể hiểu và thấy được cái hay của ngành khoa học máy tính.</p>
 
 <p align="justify">Ở bài này mình sẽ bắt đầu với cách 1 chiếc máy tính biểu diễn thông tin và cách nó hiển thị cho người dùng thế nào.</p>
 
 <h1>1/ Bắt đầu từ những con số.</h1>
 
-<p align="justify">Trước khi bắt đầu, mình muốn các bạn tưởng tượng 1 chiếc bo mạch máy tính sẽ gồm rất nhiều các bóng đèn nhỏ gồm 2 trạng thái là bật (B) và tắt (T).</p>
+<p align="justify">Trước khi bắt đầu, mình muốn các bạn tưởng tượng 1 chiếc bo mạch máy tính sẽ gồm rất nhiều các bóng đèn nhỏ gồm 2 trạng thái là <b>Bật (B)</b> và <b>Tắt (T)</b>.</p>
 
 <p align="justify">Tất cả các thông tin của máy tính đều được biểu diễn ở dạng số. Mình sẽ dùng các bóng đèn này để biểu diễn các con số với quy luật bóng đèn ở trạng thái B là 1, thì T sẽ là 0. Vậy với số 2 mình sẽ cần 2 bóng đèn ở trạng thái B. Biểu diễn số 2 tỷ sẽ cần 2 tỷ bóng đèn bật.</p>
 
@@ -21,21 +21,21 @@ title: Cách máy tính vận hành (Phần 1)
 
 <p align="justify">Nghe qua thì rất hợp lí nhưng biểu diễn số kiểu này sẽ không tối ưu dẫn đến tốn tài nguyên rất nhiều. Máy tính sẽ không biểu diễn như vậy mà sẽ dùng <a href="https://vi.wikipedia.org/wiki/H%E1%BB%87_nh%E1%BB%8B_ph%C3%A2n"> hệ số nhị phân</a>. Với hệ số nhị phân, ta có thể tận dụng được trạng thái T của bóng đèn. Giả sử ta có 3 bóng đèn. Mã nhị phân sẽ biểu diễn như sau:</p>
 
-    0: T T T - tất cả bóng đèn đều tắt.
-    1: T T B - 1 bóng đèn bên phải sáng.
-    2: T B T - 1 bóng đèn ở giữa sáng.
-    3: T B B - 2 bóng đèn giữa và phải sáng, đây cũng là 2 bóng đèn của số 1 và 2. Vì 3 = 2 + 1 nên thay vì bật bóng đèn 3, mình sẽ bật cả 2 bóng của 1 và 2.
-    4: B T T - 1 bóng đèn bên trái sáng, vì mình chỉ có 1 bóng đèn số 2 nên không thể chia ra thành 2+2 được mà bắt buộc phải thêm bóng đèn. Tiếp tục như vậy với các số bên dưới.
-    5: B T B
-    6: B B T
-    7: B B B
+ - 0: T T T - tất cả bóng đèn đều tắt.
+ - 1: T T B - 1 bóng đèn bên phải sáng.
+ - 2: T B T - 1 bóng đèn ở giữa sáng.
+ - 3: T B B - 2 bóng đèn giữa và phải sáng, đây cũng là 2 bóng đèn của số 1 và 2. Vì 3 = 2 + 1 nên thay vì bật bóng đèn 3, mình sẽ bật cả 2 bóng của 1 và 2.
+ - 4: B T T - 1 bóng đèn bên trái sáng, vì mình chỉ có 1 bóng đèn số 2 nên không thể chia ra thành 2+2 được mà bắt buộc phải thêm bóng đèn. Tiếp tục như vậy với các số bên dưới.
+ - 5: B T B - Tương tự 5 = 4 + 1 bên chúng ta sẽ bật cả bóng số 4 và bóng sô 1 cùng lúc.
+ - 6: B B T - 6 = 4 + 2.
+ - 7: B B B - 7 = 4 + 2 + 1.
 
 <p align="justify">Như vậy thay vì dùng 7 bóng đèn để biểu diễn 8 con số từ 0->7, chúng ta chỉ cần 3 bóng. Bạn có thể thử biểu diễn tiếp các con số tiếp theo và rút ra kết luận là: </p>
 
-    4 bóng sẽ được 16 số 
-    5 bóng được 32 số
-    6 bóng được 64 số
-    ... 
+ - 4 bóng sẽ được 16 số 
+ - 5 bóng được 32 số
+ - 6 bóng được 64 số
+ - ... 
 
 <p align="justify">Tới đây ta có công thức, với n bóng đèn, ta sẽ biểu diễn được 2^n (2 mũ n) con số tự nhiên. Vậy với số 2 tỷ, chúng ta cần bao nhiêu bóng đèn? Đáp án là 31 bóng, vì 2^31=2147483648. Chỉ cần đổi cách biểu diễn, chúng ta đã có thể biểu diễn được rất nhiều con số chỉ với 1 số rất ít bóng đèn.</p>
 
@@ -45,9 +45,9 @@ title: Cách máy tính vận hành (Phần 1)
 
 <h1>2/ Kí tự và bảng mã.</h1>
 
-<p align="justify">Ở mục 1, chúng ta đã biết cách máy tính biểu diễn các con số và cũng biết được tại sao các thiết bị máy tính đều có đơn vị tính là 2^n. Tiếp theo, chúng ta sẽ xem máy tính biểu diễn các kí tự như thế nào. Trước khi bắt đầu mình sẽ đổi trạng thái bật tắt của các bóng đèn thành 1 (B), 0 (T) và bóng đèn sẽ là bit để giống đơn vị trong máy hơn.</p>
+<p align="justify">Ở mục 1, chúng ta đã biết cách máy tính biểu diễn các con số và cũng biết được tại sao các thiết bị máy tính đều có đơn vị tính là 2^n. Tiếp theo, chúng ta sẽ xem máy tính biểu diễn các kí tự như thế nào. Trước khi bắt đầu mình sẽ đổi trạng thái bật tắt của các bóng đèn thành <b>1 (B)</b>, <b>0 (T)</b> và bóng đèn sẽ là <b>bit</b> để giống đơn vị trong máy hơn.</p>
 
-<p align="justify">Với số, chúng ta dùng các bit 0/1 để biểu diễn, còn với kí tự, chúng ta sẽ dùng các số để biểu diễn chúng. Giả sử với 1 bảng chữ cái 26 kí tự, chúng ta sẽ quy ước như sau:</p>
+<p align="justify">Với số, chúng ta dùng các bit 0 hoặc 1 để biểu diễn, còn với kí tự, chúng ta sẽ dùng các số để biểu diễn chúng. Giả sử với 1 bảng chữ cái 26 kí tự, chúng ta sẽ quy ước như sau:</p>
 
     a = 1
     b = 2
@@ -69,7 +69,7 @@ title: Cách máy tính vận hành (Phần 1)
   
 <p align="justify">Vậy là chúng ta có thể biểu diễn được dạng chữ từ các bit. Nhưng làm sao máy tính biết được nó nên đọc dãy bit đó là số hay kí tự? Câu này mình sẽ giải đáp ở mục 4 nhé. Quay lại bài biểu diễn chữ, chúng ta đã có quy luật biểu diễn chữ bằng các quy ước với các con số và cần 5 bit để biểu diễn bảng chữ cái 26 kí tự. Vậy các kí tự khác nằm ngoài bản chứ cái như: @,!,#,&,*,... hay chữ viết hoa thì sao?</p>
 
-<p align="justify">Tất cả các kí tự khác đều được biểu diễn như vậy, điều cần làm là chúng ta phải có 1 bảng quy ước chung để tất cả các máy tính trên thế giới có thể cùng hiểu. Và đó chỉnh là <a href="https://vi.wikipedia.org/wiki/ASCII">bảng mã ASCII</a>. Bảng mã ASCII biểu diễn được 128 kí tự gồm bảng chứ cái alphabet thường, hoa và các kí tự đặc biệt. Vậy chúng ta cần 7 bit cho mỗi kí tự, vì 2^7 là 128, nhưng máy tính thường sẽ dùng 8 bit để tròn 1 byte cho mỗi kí tự.</p>
+<p align="justify">Tất cả các kí tự khác đều được biểu diễn về 1 con số, điều cần làm là chúng ta phải có 1 bảng quy ước chung để tất cả các máy tính trên thế giới có thể cùng hiểu. Và đó chỉnh là <a href="https://vi.wikipedia.org/wiki/ASCII">bảng mã ASCII</a>. Bảng mã ASCII biểu diễn được 128 kí tự gồm bảng chứ cái alphabet thường, hoa và các kí tự đặc biệt. Vậy chúng ta cần 7 bit cho mỗi kí tự, vì 2^7 là 128, nhưng máy tính thường sẽ dùng 8 bit để tròn 1 byte cho mỗi kí tự.</p>
 
 <p align="justify">Vậy mình gõ Tiếng Việt, máy tính sẽ biểu diễn như thế nào? Chúng ta sẽ quy ước thêm những kí tự có kèm dấu tương ứng với những giá trị khác chưa được dùng. Đó là 1 quy ước khác hay còn gọi là <a href="https://vi.wikipedia.org/wiki/Unicode">bảng mã Unicode</a>. Mình tin là các bản đã thấy chữ Unicode ở đâu đấy, nó thường là option trong các phần mềm gõ Tiếng Việt trên máy tính. Đễ gõ được Tiếng Việt, các phần mềm phải chuyển qua mã Unicode thì mới có thể bỏ dấu được. Unicode có nhiều loại, tương ứng với số lượng bit: UTF-8 (8bit), UTF-16 (16bit), UTF-32 (32bit). Tùy vào các ngôn ngữ có kí tự phức tạp quá hay không mà mình cần 1 bảng mã có nhiều hay ít bit.</p>
 
@@ -96,15 +96,15 @@ title: Cách máy tính vận hành (Phần 1)
     Trắng: 1 1 1
     Đen: 0 0 0
 
-<p align="justify">Với 3 bit, chúng ta vẫn sẽ dùng công thức 2^n, cụ thể ở đây chúng ta có thể biểu diễn được 2^3 = 8 màu. Nhưng bạn không thể biểu diễn 1 tấm ảnh nào đó chỉ với 8 màu này được, trong thực tế có rất nhiều màu khác nhau ngoài 8 màu này. Nên máy tính sẽ tăng số bit lên cho mỗi kênh màu, ở đây chúng ta sẽ cho mỗi kênh màu là 8 bit (1byte) tương ứng với 255 giá trị. Vậy 255 giá trị này tượng trưng cho điều gì?</p>
+<p align="justify">Với 3 bit, chúng ta vẫn sẽ dùng công thức 2^n, cụ thể ở đây chúng ta có thể biểu diễn được 2^3 = 8 màu. Nhưng bạn không thể biểu diễn 1 tấm ảnh nào đó chỉ với 8 màu này được, trong thực tế có rất nhiều màu khác nhau ngoài 8 màu này. Nên máy tính sẽ tăng số bit lên cho mỗi kênh màu, ở đây chúng ta sẽ cho mỗi kênh màu là 8 bit (1byte) tương ứng với 256 giá trị. Vậy 256 giá trị này tượng trưng cho điều gì?</p>
 
-<p align="justify">Khi pha màu, màu sắc đầu ra sẽ phụ thuộc vào lượng màu gốc mà bạn cho vào. Ví dụ bạn cho 1 hủ màu đỏ pha với nửa hủ màu xanh, nó sẽ không ra màu vàng mà sẽ là màu cam. Như vậy số 255 sẽ tượng trưng cho 1 hủ màu, bạn muốn màu cam thì giá trị của các kênh màu sẽ như sau:</p>
+<p align="justify">Khi pha màu, màu sắc đầu ra sẽ phụ thuộc vào lượng màu gốc mà bạn cho vào. Ví dụ bạn cho 1 hũ màu đỏ pha với nửa hũ màu xanh, nó sẽ không ra màu vàng mà sẽ là màu cam. Như vậy số 256 sẽ tượng trưng cho 1 hũ màu, bạn muốn màu cam thì giá trị của các kênh màu sẽ như sau:</p>
 
     R: 255
     G: 128
     B: 0
 
-<p align="justify">Tương tự như vậy, bạn có thể điều chỉnh giá trị của 3 kênh màu cơ ản để có thể ra các màu khác nhau, cụ thể ở đây là 2^24 = 16777216 (24bit) màu. Bạn có thể thử pha màu bằng cách nhập các giá trị R G B ở <a href="https://g.co/kgs/dQetcT">trang này</a>.</p>
+<p align="justify">Tương tự như vậy, bạn có thể điều chỉnh giá trị của 3 kênh màu cơ bản để có thể ra các màu khác nhau, cụ thể ở đây là 2^24 = 16777216 (24bit) màu. Bạn có thể thử pha màu bằng cách nhập các giá trị R G B ở <a href="https://g.co/kgs/dQetcT">trang này</a>.</p>
 
 <p align="justify">Màu đã biểu diễn được, vậy tấm ảnh thì sao? 1 tấm ảnh sẽ tập hợp rất nhiều điểm ảnh, mà máy tính gọi là pixel. Mỗi điểm ảnh sẽ mang 1 giá trị màu sắc là 3 con số RGB. Chắc hẳn bạn đã nghe về Megapixel (MP), thường thì mua điện thoại mình sẽ quan tâm tới giá trị này để biết camera chụp ảnh có đẹp và nét không. Đó chính xác là cái pixel mà mình đang nhắc tới. Giá trị MP đó được tính từ độ phân giải của ảnh, bằng số pixel của chiều ngang nhân cho số pixel của chiều rộng. Ví dụ điện thoại bạn chụp được tấm ảnh có độ phân giải 3840x2160 pixel thì độ phân giải là 8294400 pixels tương đương với 8.2MP. Tấm ảnh sẽ chứa tầm 8 triệu pixels và mỗi pixel có 3 giá trị RGB, vậy ta có thể biểu diễn 1 tấm ảnh với 8294400*3 = 24883200 bytes và mỗi byte là 1 số tự nhiên có giá trị từ 0-255.</p>
 
@@ -132,12 +132,10 @@ title: Cách máy tính vận hành (Phần 1)
 
 <p align="justify">Ở đây có 2 giá trị chính là <b>Sample Rate</b> và <b>Sample Format</b>. Sample rate là tần số lấy mẫu, còn sample format có thể hiểu là dịnh dạng của mỗi sample.</p>
 
-    - Sample rate: Đơn vị là Hz, nó đại diện cho số lẫn lấy mẫu trên mỗi 1 giây. Ví dụ 8000Hz là mỗi 1 giây chúng ta sẽ lấy mẫu 8000 lần. Số này càng cao thì âm thanh chúng ta nghe được càng chính xác hơn so với âm thanh gốc.
-    - Sample format: Đơn vị là bit, sample format đại diện cho biên độ âm thanh có rộng hay không. Ví dụ với 8bit, chúng ta sẽ biểu diễn được 48dB (decibels), 16bit được 96dB. Càng nhiều bit chúng ta sẽ càng có được âm thanh chất lượng cao hơn.
-    - 
+ - <b>Sample rate</b>: Đơn vị là Hz, nó đại diện cho số lẫn lấy mẫu trên mỗi 1 giây. Ví dụ 8000Hz là mỗi 1 giây chúng ta sẽ lấy mẫu 8000 lần. Số này càng cao thì âm thanh chúng ta nghe được càng chính xác hơn so với âm thanh gốc.
+ - <b>Sample format</b>: Đơn vị là bit, sample format đại diện cho biên độ âm thanh có rộng hay không. Ví dụ với 8bit, chúng ta sẽ biểu diễn được 48dB (decibels), 16bit được 96dB. Càng nhiều bit chúng ta sẽ càng có được âm thanh chất lượng cao hơn.
+  
 <p align="justify">Vậy với 1s âm thanh chất lượng 8000Hz và 8 bit (1 byte) thì chúng ta sẽ cần 8000 bytes (khoảng 8kB).</p>
-
-   - (Đưa ví dụ file mp3 ở đây)
   
 <h2>3.3/ Video.</h2>
 
@@ -147,7 +145,7 @@ title: Cách máy tính vận hành (Phần 1)
   
 <p align="justify">Chắc hẳn các bạn đã quá quen với trò chơi bên trên. Dùng 1 tập ảnh và lật nó liên tục để tạo ra cảm giác như đang xem 1 video. Máy tính cũng sẽ dùng cách này để có thể tạo ra 1 file video từ các hình ảnh có sẵn. Video sẽ gồm các file ảnh chuyển động liên tục với nhau với 1 tần số đủ cao để mắt thường không nhận biết được đó là các tấm ảnh riêng lẻ. Đại lượng để biểu diễn sự liên tục này là frame per second (fps). Nếu fps càng cao thì video sẽ càng mượt mà, ngược lại càng thấp thì video sẽ có cảm giác giật lag.</p>
 
-<p align="justify">Vậy còn âm thanh trong video thì sao? Video cũng sẽ lưu trữ âm thanh kèm theo các tấm ảnh và sẽ phát chúng cùng 1 lúc với các tấm ảnh để tạo cảm giác người hay vật trong video phát ra âm thanh. Thực chất chũng là những dữ liệu riêng lẻ và được đồng bộ với nhau theo thời gian.</p>
+<p align="justify">Vậy còn âm thanh trong video thì sao? Video cũng sẽ lưu trữ âm thanh kèm theo các tấm ảnh và sẽ phát chúng cùng 1 lúc với các tấm ảnh để tạo cảm giác người hay vật trong video phát ra âm thanh. Thực chất chúng là những dữ liệu riêng lẻ và được đồng bộ với nhau theo thời gian.</p>
 
 <p align="justify">Tương tự với các video có việt sub, chúng ta cũng sẽ lưu sub dưới dạng text và tách biệt với ảnh cũng như âm thanh. Sau đó việc cần làm là đồng bộ các dòng sub đó để có thể phát lên cùng lúc với ảnh và âm thanh trong video.</p>
 
@@ -183,12 +181,11 @@ title: Cách máy tính vận hành (Phần 1)
 
 ![alt tag](../images/20230826/bmp_header.png)
   
-<p align="justify">2 bytes đầu có giá trị 66 và 77, tra theo mã ASCII chúng ta sẽ ra đc là BM, nghĩa là file này là file bitmap. 1 số byte tiếp theo sẽ biểu diễn các thông tin khác của file, nhưng chúng ta chỉ cần tập trung vào dãy số 20 00 00 00 20 00 00 00. Đây là dãy số biểu diễn kích thước của tấm ảnh. Như mình đã nói, thông tin ảnh chỉ là 1 dãy các số liên tục, nên chũng ta cần phải lưu thông tin chiều cao và chiều rộng của ảnh để có thể biểu diễn các pixel vào đúng chỗ của mình. Ở đây file bitmap dùng 4 bytes để biểu diễn giá trị cho mỗi chiều.</p>
+<p align="justify">2 bytes đầu có giá trị 66 và 77, tra theo mã ASCII chúng ta sẽ ra đc là BM, nghĩa là file này là file bitmap. 1 số byte tiếp theo sẽ biểu diễn các thông tin khác của file, nhưng chúng ta chỉ cần tập trung vào dãy số 20 00 00 00 20 00 00 00. Đây là dãy số biểu diễn kích thước của tấm ảnh. Như mình đã nói, thông tin ảnh chỉ là 1 dãy các số liên tục, nên chúng ta cần phải lưu thông tin chiều cao và chiều rộng của ảnh để có thể biểu diễn các pixel vào đúng chỗ của mình. Ở đây file bitmap dùng 4 bytes để biểu diễn giá trị cho mỗi chiều.</p>
 
 <p align="justify">Tiếp đến là dãy 66 71 82, nếu chuyển đổi qua mã ASCII, chúng ta sẽ được 3 kí tự BGR, đây cũng là lý do các data bị đảo ngược lại, vì ảnh bitmap sẽ lưu dữ liệu theo định dạng BGR hay vì RGB, 2 kênh màu đỏ và xanh dương được đảo vị trí cho nhau.</p>
 
-<p align="justify">Hầu hết tất cả các file đều có cùng 1 định dạng là header và data. Header sẽ là phần chứa mô tả của file đó, tương ứng với đuôi file, còn data là dãy các chữ số biểu diễn thông tin của file đó. Vậy cái gì sẽ sử dụng phần header đó? Mình sẽ đi tiếp phần này ở mục 5.</p>
-<h1>5/ Biểu diễn lên màn hình.</h1>
+<p align="justify">Hầu hết cấu trúc của các file đều có 2 phần là Header và Data. Header sẽ là phần chứa mô tả của file đó, tương ứng với định dạng của file, còn Data là dãy các chữ số biểu diễn thông tin của file đó. Vậy cái gì sẽ sử dụng phần Header? Mình sẽ giải thích ở bài viết sau.</p>
 
 <h2>Comments</h2>
 <div
