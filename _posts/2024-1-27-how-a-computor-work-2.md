@@ -15,7 +15,7 @@ title: Series Làm Bạn Gái Yêu Máy Tính (Phần 2) - Cách giao tiếp v�
 
 <p align="justify">Vậy ngôn ngữ lập trình và ngôn ngữ giao tiếp của con người có gì giống và khác nhau?</p>
  
- - Tương tự như sự đa dạng của ngôn ngữ con người (tiếng Anh, tiếng Việt,...). Để giao tiếp với máy, chúng ta cũng có rất nhiều ngôn ngữ khác nhau. Nhưng sự đa dạng này không nằm ở sự khác biệt địa lý, văn hóa hay lãnh thỗ. Không phải máy tính ở Anh/Mỹ là phải code bằng tiếng Anh, máy tính ở Việt Nam là code bằng tiếng Việt. Tất cả các ngôn ngữ lập trình đều viết bằng tiếng Anh, nhưng sẽ khác nhau về cú pháp, mục đích sử dụng, chức năng và do người tạo ra chúng quyết định. 1 số ngôn ngữ phổ biến như: C/C++, Java, Go, Python,...
+ - Tương tự như sự đa dạng của ngôn ngữ con người (tiếng Anh, tiếng Việt,...). Để giao tiếp với máy, chúng ta cũng có rất nhiều ngôn ngữ khác nhau. Nhưng sự đa dạng này không nằm ở sự khác biệt địa lý, văn hóa hay lãnh thổ. Không phải máy tính ở Anh/Mỹ là phải code bằng tiếng Anh, máy tính ở Việt Nam là code bằng tiếng Việt. Tất cả các ngôn ngữ lập trình đều viết bằng tiếng Anh, nhưng sẽ khác nhau về cú pháp, mục đích sử dụng, chức năng và do người tạo ra chúng quyết định. 1 số ngôn ngữ phổ biến như: C/C++, Java, Go, Python,...
  - Với ngôn ngữ con người, chúng ta có thể biểu đạt 1 cách đa dạng, miễn sao người nghe hiểu được ý của mình. Ví dụ như lúc nói có thể nói ngắn gọn, cắt bớt chữ hoặc phát âm không chính xác 100%. Nhưng với ngôn ngữ lập trình, nó đòi hỏi mọi thứ phải chính xác 100% về mặt chính tả lẫn cú pháp. Vì máy tính chỉ hiểu 0 là 0, 1 là 1 chứ không như con người nói <b>"em không sao!"</b> nghĩa là phải hiểu đang <b>"rất" có sao</b>.
   
 <h3><i>Như vậy chúng ta đã biết sự giống và khác nhau giữa giao tiếp với máy tính và giao tiếp với con người như thế nào. Vẫn là sử dụng ngôn ngữ như công cụ. Nhưng cụ thể làm sao để dùng các ngôn ngữ đấy giao tiếp với máy tính?</i></h3>
@@ -80,7 +80,7 @@ int main() {
 
 <h1>4/ Phần mềm (Software)</h1>
 
-<p align="justify">Như vậy tới đây, chúng ta đã biết máy tính lưu trữ, biểu diễn thông tin như thế nào. Làm sao để con người có thể giao tiếp với máy tính bằng ngôn ngữ lập trình. Chúng ta có thể tổng hợp lại như sau:</p>
+<p align="justify">Tới đây, chúng ta đã biết máy tính lưu trữ, biểu diễn thông tin như thế nào. Làm sao để con người có thể giao tiếp với máy tính bằng ngôn ngữ lập trình. Chúng ta có thể tổng hợp lại như sau:</p>
 
 * Máy tính là 1 thiết chỉ hiểu 0 và 1, nên tất cả những gì ta đưa cho đều phải được biểu diễn dưới dạng 0 và 1, sau đó chúng sẽ lưu trữ dưới các bộ nhớ.
 
