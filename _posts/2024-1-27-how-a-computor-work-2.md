@@ -99,7 +99,7 @@ int main() {
 
 <p align="justify">Phần mềm sẽ giải quyết vấn đề này. Có thể hiểu phần mềm là tập hợp rất nhiều câu lệnh được viết bằng ngôn ngữ lập trình và đã được biên dịch ra mã máy sẵn. Khi người dùng cần giao tiếp với máy tính, họ sẽ không phải viết lại 1 đoạn code nào hết mà sẽ dùng các phần mềm có sẵn để thực hiện điều đó.</p>
 
-<p align="justify">Lấy ví dụ Hello, World! thì khi mình chạy lệnh <b>gcc hello_world.c -o hello_world</b> thì lúc này file hello_world được sinh ra chính là phần mềm in dòng chữ Hello, World! lên màn hình. Lúc này mình có thể mang file này đi bất kì máy nào khác (cùng HĐH và kiến trúc phần cứng) để chạy mà không cần viêc code lại.</p>
+<p align="justify">Lấy ví dụ Hello, World! thì khi mình chạy lệnh <b>gcc hello_world.c -o hello_world</b> thì lúc này file hello_world được sinh ra chính là phần mềm in dòng chữ Hello, World! lên màn hình. Lúc này mình có thể mang file này đi bất kì máy nào khác (cùng HĐH và kiến trúc phần cứng) để chạy mà không cần viết code lại.</p>
 
 <p align="justify">Tương tự với các phần mềm mà các bạn sử dùng hàng ngày như: Word, Spotify, Netflix,... Tất cả đã được viết sẵn và biên dịch cũng như đóng gói lại. Việc của mình là lấy file cài đặt về để cài lên máy và sử dụng bằng các thao thác chuột, bàn phím chứ không cần phải viết 1 dòng code nào nữa, vì bên trong các file đó đã chứa những dòng code xử lý các sự kiện click chuột, gõ phím của bạn sẵn rồi.</p>
 
